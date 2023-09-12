@@ -36,19 +36,35 @@ Figures 1a,1b and 2d blah
 
 # It doesn't cover below:
 Fig. S2B,C blah
-Fig. 2E blah
-Figure S2B,C blah
+fig. 2E blah
+figure S2B,C blah
 Figure 2E blah
+controls (figure 3B). At 18 mo
+controls (fig. 3B,C). At 18 mo
+(figure 1; table 1).
+(figure 2; p=3·95×10−21).
+line (figure 3A), with 
+trols (θ; see figure 3D legend).
+ed Data Fig. 5) for
+ed TJ (Fig.2E), it 
 ```
 ## Figure (2)
-`(?:Fig\.|Figure)\s+[S\d]+[A-Z,]+,?(?=\s+\w+)`
+`(?i)(?:fig\.|figure)\s?[S\d]+[A-Z,]*(?=\s|\.|\b|$)`
 
 - Test cases
 ```
 Fig. S2B,C blah
-Fig. 2E blah
-Figure S2B,C blah
+fig. 2E blah
+figure S2B,C blah
 Figure 2E blah
+controls (figure 3B). At 18 mo
+controls (fig. 3B,C). At 18 mo
+(figure 1; table 1).
+(figure 2; p=3·95×10−21).
+line (figure 3A), with 
+trols (θ; see figure 3D legend).
+ed Data Fig. 5) for
+ed TJ (Fig.2E), it 
 ```
 
 ## Table (1)
@@ -86,20 +102,34 @@ Tables 1a,1b and 2d blah
 
 # It doesn't cover below:
 Table S2B,C blah
-Table 2E blah
+table 2E blah
 table S2B,C blah
 Table 2E blah
+controls (table 3B). At 18 mo
+controls (table 3B,C). At 18 mo
+line (table 3A), with 
+trols (θ; see table 3D legend).
+ed TJ (Table2E), it
+
 ```
 ## Table (2)
-`(?:(?i)table)\s+[S\d]+[A-Z,]+,?(?=\s+\w+)`
+`(?i)(?:table)\s?[S\d]+[A-Z,]*(?=\s|\.|\b|$)`
 
 - Test cases
 ```
 Table S2B,C blah
-Table 2E blah
+table 2E blah
 table S2B,C blah
 Table 2E blah
+controls (table 3B). At 18 mo
+controls (table 3B,C). At 18 mo
+line (table 3A), with 
+trols (θ; see table 3D legend).
+ed TJ (Table2E), it
 ```
 
-
-(?:(?i)table)\s+[S\d]+[A-Z,]+,?(?=\s+\w+)
+future work:
+in Fig. 1D2-4. P
+pd (Fig. 2D3). 
+(Fig. 1B2,3) and
+...
