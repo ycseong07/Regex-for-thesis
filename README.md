@@ -2,7 +2,7 @@
 Tested in https://regex101.com/
 
 ## Figure
-`\b((?i)figure(s)?|fig\.)\s?([a-zA-Z]){0,4}(?:[IVXLCDM]+|\d+)(?:(?:[–\d\s,]*(?:and\s)?[–\d\s,]*)|(?:[–\d\s,]*(?:and\s)?[–\d\s,]*[a-zA-Z\d]+\s*,\s*)+[a-zA-Z\d]+\s+and\s+[a-zA-Z\d]+\s*)?(\.)?\b`
+`((?i)figure(s)?|fig\.)\s?([a-zA-Z]){0,4}(?:[IVXLCDM]+|\d+)(?:(?:[–\d\s,]*(?:and\s)?[–\d\s,]*)|(?:[–\d\s,]*(?:and\s)?[–\d\s,]*[a-zA-Z\d]+\s*,\s*)+[a-zA-Z\d]+\s+and\s+[a-zA-Z\d]+\s*)?(\.)?`
 
 Test cases
 ```
@@ -34,3 +34,6 @@ figure X is
 'blah (Fig. 1a, 1b and 1c, Tables S1 and Tables S2).blah' -> 'blah ({FIGURE}, Tables S1 and Tables S2).blah'
 Figures 1a,1b and 2d
 ```
+
+## Table
+`(?i)table(s)?\s?([a-zA-Z]){0,4}(?:[IVXLCDM]+|\d+)(?:(?:[–\d\s,]*(?:and\s)?[–\d\s,]*)|(?:[–\d\s,]*(?:and\s)?[–\d\s,]*[a-zA-Z\d]+\s*,\s*)+[a-zA-Z\d]+\s+and\s+[a-zA-Z\d]+\s*)?(\.)?`
